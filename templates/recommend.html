@@ -1,0 +1,145 @@
+
+  {% if t=='s' %}
+  <div class="shadow p-3 mb-5 bg-white rounded">
+    <h3 style="color:rgb(0, 102, 255)">Sorry! This movie is not in our database.</h3>
+    <h3 style="color:rgb(0, 102, 255)">Please check if you spelled it correct.</h3>
+    <h3 style="color:rgb(0, 102, 255)">Or try with another movie.</h3>
+  </div>
+
+  {% else %}
+  <style type="text/css" id="gwd-text-style">
+    p {
+      margin: 0px;
+    }
+    h1 {
+      margin: 0px;
+    }
+    h2 {
+      margin: 0px;
+    }
+    h3 {
+      margin: 0px;
+    }
+  </style>
+  <style type="text/css">
+    html, body {
+      width: 100%;
+      height: 100%;
+      margin: 0px;
+    }
+    body {
+      background-color: transparent;
+      transform: perspective(1400px) matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+      transform-style: preserve-3d;
+    }
+    .gwd-button-1o91 {
+      position: absolute;
+      left: 31px;
+      top: 26px;
+      background-color: transparent;
+      width: 107px;
+      height: 43px;
+      transform-origin: 5.81522px 13.1867px 0px;
+      font-family: "Bree Serif";
+      background-image: -webkit-linear-gradient(left, rgb(241, 118, 239) 0%, rgb(61, 86, 176) 57%);
+    }
+    .gwd-span-1ony {
+      font-size: 20px;
+      color: rgb(191, 16, 89);
+    }
+    .gwd-rect-16sp {
+      position: absolute;
+      width: 754.667px;
+      height: 73.333px;
+      box-sizing: border-box;
+      border-width: 1px;
+      border-style: solid;
+      border-color: rgb(0, 0, 0);
+      left: 28px;
+      top: 77px;
+      background-color: transparent;
+      background-image: -webkit-linear-gradient(left, rgb(7, 85, 202) 0%, rgb(227, 89, 232) 54%);
+    }
+    .gwd-p-ldiz {
+      position: absolute;
+      left: 36px;
+      top: 85px;
+    }
+    .gwd-span-1f24 {
+      font-size: 30px;
+    }
+    .gwd-span-17j9 {
+      font-size: 18px;
+    }
+    .gwd-rect-1fnt {
+      position: absolute;
+      width: 493.667px;
+      height: 331.017px;
+      box-sizing: border-box;
+      border-width: 1px;
+      border-style: solid;
+      border-color: rgb(0, 0, 0);
+      background-image: -webkit-linear-gradient(left, rgb(7, 85, 202) 0%, rgb(227, 89, 232) 54%);
+      background-color: transparent;
+      left: 26px;
+      top: 161px;
+    }
+    .gwd-rect-144f {
+      position: absolute;
+      width: 260px;
+      height: 329.683px;
+      box-sizing: border-box;
+      border-width: 1px;
+      border-style: solid;
+      border-color: rgb(0, 0, 0);
+      background-color: transparent;
+      background-image: -webkit-linear-gradient(left, rgb(218, 88, 223) 33%, rgb(34, 49, 209) 52%);
+      left: 523px;
+      top: 161px;
+    }
+    .gwd-span-1iv3 {
+      font-family: Comfortaa;
+      font-size: 30px;
+    }
+    .gwd-ul-t6ix {
+      position: absolute;
+      width: 386.667px;
+      height: 261.333px;
+      left: 62.6667px;
+      top: 209.333px;
+    }
+    .gwd-img-n7t2 {
+      position: absolute;
+      height: 80px;
+      width: 200px;
+      left: 554px;
+      top: 230px;
+    }
+    .gwd-img-jgzy {
+      position: absolute;
+      width: 200px;
+      height: 90px;
+      left: 555px;
+      top: 343px;
+    }
+    }
+  </style>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic|Yanone+Kaffeesatz:200,300,regular,500,600,700|Comfortaa:300,regular,500,600,700|Bree+Serif:regular|Sriracha:regular" rel="stylesheet" type="text/css">
+  <div>
+    <button class="gwd-button-1o91">
+    <span class="gwd-span-1ony">Home</span>
+  </button>
+  <svg data-gwd-shape="rectangle" class="gwd-rect-16sp"></svg>
+  <p class="gwd-p-ldiz"><span class="gwd-span-1iv3">{{movie}} is a great movie.</span><br>
+    
+    <span class="gwd-span-17j9">Check out more of these.</span></p>
+  <svg data-gwd-shape="rectangle" class="gwd-rect-1fnt"></svg>
+  <svg data-gwd-shape="rectangle" class="gwd-rect-144f"></svg>
+  <ul class="gwd-ul-t6ix">
+    {% for m in r %}
+      <li class="list-group-item" style="color:rgb(0, 0, 0)"><strong>{{m|capitalize}}</strong></li>
+    {% endfor %}
+  </ul>
+  <a href="https://www.linkedin.com/in/amit-bhuyan-9636aa124"><img src="{{ user_image[0] }}" class="gwd-img-n7t2"></a>
+  <a href="https://github.com/bhuyanamit986"><img src="{{ user_image[1] }}" class="gwd-img-jgzy"></a>
+  {% endif %}
