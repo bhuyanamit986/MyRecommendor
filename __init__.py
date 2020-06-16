@@ -85,6 +85,6 @@ def recommend():
         return render_template('recommend.html',movie=movie,r=r,t='l', user_image= [full_filename1, full_filename2])
 
 
-app.debug = True
+app.debug = False
 if __name__ == "__main__":
     app.run()
