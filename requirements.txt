@@ -13,4 +13,4 @@ seaborn==0.9.0
 MarkupSafe==1.1.1
 spyder==3.3.6
 tqdm==4.32.1
-Werkzeug==0.15.4
+Werkzeug==0.15.5
